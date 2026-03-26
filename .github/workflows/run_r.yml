@@ -20,7 +20,8 @@ jobs:
           Rscript -e 'install.packages(c("readr", "dplyr"))' # Укажите свои пакеты
       - name: Install dependencies
         run: |
-          Rscript -e 'install.packages(c("readr", "shiny"))'
+          Rscript -e 'install.packages(c("shiny", "visNetwork", "DT", "ggplot2", "dplyr", "bslib"))'
+
 
       - name: Run script
         run: Rscript lol.R # Замените на имя вашего главного файла
