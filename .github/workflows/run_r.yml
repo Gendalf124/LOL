@@ -18,6 +18,9 @@ jobs:
       - name: Install dependencies (если нужны)
         run: |
           Rscript -e 'install.packages(c("readr", "dplyr"))' # Укажите свои пакеты
+      - name: Install dependencies
+        run: |
+          Rscript -e 'install.packages(c("readr", "shiny"))'
 
       - name: Run script
         run: Rscript lol.R # Замените на имя вашего главного файла
